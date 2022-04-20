@@ -11,7 +11,10 @@ Python-滑鼠機器人-笛卡兒心臟線
 # 打包成exe (PyInstaller)
 |說明|連結|
 |:-:|:-:|
-|【Python】使用 PyInstaller 將 Python打包成 exe 檔|https://medium.com/pyladies-taiwan/python-%E5%B0%87python%E6%89%93%E5%8C%85%E6%88%90exe%E6%AA%94-32a4bacbe351|
+|【Python】使用 PyInstaller 將 Python打包成 exe 檔|https://reurl.cc/Er7Qdv|
+|使用自訂icon(需使用ico圖檔)|https://reurl.cc/Xj6QOg|
+|指令|$ pyinstaller --name=PartyKonMing  --icon=.\images\KonMing.ico --clean -F .\MouseRobot.py|
+|指令|$ pyinstaller -F 就是 --onefile|
 
 # 參考資料
 |說明|連結|
@@ -19,7 +22,8 @@ Python-滑鼠機器人-笛卡兒心臟線
 |心臟線方程式|https://baike.baidu.hk/item/%E5%BF%83%E8%87%9F%E7%B7%9A/10323843|
 |導出使用的package|pip freeze > ./requirements.txt|
 |安裝使用的package|pip install -r ./requirements.txt|
-|PyInstaller打包exe|https://medium.com/pyladies-taiwan/python-%E5%B0%87python%E6%89%93%E5%8C%85%E6%88%90exe%E6%AA%94-32a4bacbe351|
+|PyInstaller打包exe|https://reurl.cc/Er7Qdv|
+|建立只有一個元素的元組 tuple|https://shengyu7697.github.io/python-tuple/|
 
 
 
