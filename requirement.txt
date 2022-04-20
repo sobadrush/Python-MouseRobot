@@ -1,0 +1,13 @@
+altgraph==0.17.2
+distlib==0.3.4
+filelock==3.6.0
+macholib==1.15.2
+pbr==5.8.1
+platformdirs==2.5.1
+pyinstaller==4.7
+pyinstaller-hooks-contrib==2021.4
+six==1.16.0
+stevedore==3.5.0
+virtualenv==20.13.2
+virtualenv-clone==0.5.7
+virtualenvwrapper==4.8.4
