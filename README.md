@@ -8,6 +8,10 @@ Python-滑鼠機器人-笛卡兒心臟線
 4. 可直接呼叫 `deactive` 指令離開虛擬環境
 5. 設定zsh最右方顯示虛擬環境名稱: (ref. https://blog.csdn.net/Zero_S_Qiu/article/details/104217295)
 
+# 此專案的 Mac 虛擬環境名稱
+1. 名稱：venv_MouseRobot
+2. 路徑：/Users/roger/.virtualenvs/venv_MouseRobot
+
 # 打包成exe (PyInstaller)
 |說明|連結|
 |:-:|:-:|
