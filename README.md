@@ -20,6 +20,12 @@ Python-滑鼠機器人-笛卡兒心臟線
 |指令|$ pyinstaller --name=PartyKonMing  --icon=.\images\KonMing.ico --clean -F .\MouseRobot.py|
 |指令|$ pyinstaller -F 就是 --onefile|
 
+# Python 製作視窗程式
+|說明|連結|
+|:-:|:-:|
+|為應用程式設計圖形化介面，使用Python Tkinter 模組|https://www.rs-online.com/designspark/python-tkinter-cn|
+|綁定空白鍵事件|https://stackoverflow.com/questions/15753793/how-to-bind-spacebar-key-to-a-certain-method-in-tkinter-python|
+
 # 參考資料
 |說明|連結|
 |:-:|:-:|
@@ -28,6 +34,8 @@ Python-滑鼠機器人-笛卡兒心臟線
 |安裝使用的package|pip install -r ./requirements.txt|
 |PyInstaller打包exe|https://reurl.cc/Er7Qdv|
 |建立只有一個元素的元組 tuple|https://shengyu7697.github.io/python-tuple/|
+|Python跨檔案共享全域性變數|https://www.gushiciku.cn/pl/gUtK/zh-tw|
+|傳遞function ref作為參數|https://www.geeksforgeeks.org/passing-function-as-an-argument-in-python/|
 
 
 

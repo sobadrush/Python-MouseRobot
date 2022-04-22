@@ -4,6 +4,8 @@ from math import cos, pi, sin, radians
 import pyautogui
 import time
 
+import globalvar as gl
+
 """
 計算【笛卡兒心臟】線點資料
 """
@@ -27,6 +29,9 @@ def calcDescartesPoints():
 根據計算出的心臟線點資料進行移動滑鼠
 """
 def moveMouseHeart():
+
+    global _runFlag
+
     ww = pyautogui.size().width
     hh = pyautogui.size().height
     centralX = ww/2
@@ -38,13 +43,16 @@ def moveMouseHeart():
     # 計算一圈心臟線的點資料
     pointsTuple = calcDescartesPoints()
 
-    # Loop Run
-    while True:
-        for i in range(0, len(pointsTuple)):
+    i = 0
+    while i < len(pointsTuple):
+        if gl.get_value('RunFlag') == True:
+            if i == len(pointsTuple) - 1:
+                i = 0
             pos_X = pointsTuple[i].get("X") + centralX
             pos_Y = pointsTuple[i].get("Y") + centralY
             print(f'{{ {pos_X}, {pos_Y} }}')
             pyautogui.moveTo(x=pos_X, y=pos_Y, duration=0.01) # 移動滑鼠
+            i += 1
 
 
 if __name__ == '__main__':
