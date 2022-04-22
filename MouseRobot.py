@@ -23,9 +23,10 @@ def calcDescartesPoints():
         t += (posDict,) # tuple只能加入tuple → 參考:建立只有一個元素的元組 tuple
     return t
 
-
-if __name__ == '__main__':
-
+"""
+根據計算出的心臟線點資料進行移動滑鼠
+"""
+def moveMouseHeart():
     ww = pyautogui.size().width
     hh = pyautogui.size().height
     centralX = ww/2
@@ -44,3 +45,8 @@ if __name__ == '__main__':
             pos_Y = pointsTuple[i].get("Y") + centralY
             print(f'{{ {pos_X}, {pos_Y} }}')
             pyautogui.moveTo(x=pos_X, y=pos_Y, duration=0.01) # 移動滑鼠
+
+
+if __name__ == '__main__':
+    moveMouseHeart()
+
