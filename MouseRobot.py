@@ -20,7 +20,7 @@ def calcDescartesPosXY(radius, deg):
 """
 def calcDescartesPoints():
     t = tuple()
-    for deg in range(0, 360, 10): # step = 10
+    for deg in range(0, 360, 6): # step = 6
         posDict = calcDescartesPosXY(100, deg)
         t += (posDict,) # tuple只能加入tuple → 參考:建立只有一個元素的元組 tuple
     return t

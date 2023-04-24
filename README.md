@@ -36,6 +36,7 @@ Python-滑鼠機器人-笛卡兒心臟線
 |建立只有一個元素的元組 tuple|https://shengyu7697.github.io/python-tuple/|
 |Python跨檔案共享全域性變數|https://www.gushiciku.cn/pl/gUtK/zh-tw|
 |傳遞function ref作為參數|https://www.geeksforgeeks.org/passing-function-as-an-argument-in-python/|
+|偵測視窗關閉 WM_DELETE_WINDOW |https://reurl.cc/4Qea0V|
 
 
 
