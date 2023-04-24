@@ -1,7 +1,7 @@
 # -*- coding: UTF-8 -*-
 
 import tkinter as tk
-from tkinter import messagebox
+import tkinter.font as tkFont
 ############################
 from math import cos, sin, pi, radians
 import pyautogui
@@ -17,10 +17,11 @@ from Job import Job
 """
 建立Button
 """
-def create_button(txt='default', _column=1, _row=1):
+def create_button(txt='default'):
     btn = tk.Button(window, text=txt, bg='gray', fg='white', font=('Arial', 13))
     btn['width'] = 50
     btn['height'] = 5
+
 
     # 按鈕被按下的背景顏色
     btn['activebackground'] = 'darkgray'
@@ -28,7 +29,8 @@ def create_button(txt='default', _column=1, _row=1):
     # 按鈕被按下的文字顏色 ( 前景 )
     btn['activeforeground'] = 'yellow'
 
-    btn.grid(column=_column, row=_row)
+    # btn.grid(column=_column, row=_row)
+    btn.pack(side="top", padx=10, pady=30)
     return btn
 
 """
@@ -53,13 +55,14 @@ def stopThread(event):
 if __name__ == '__main__':
     
     window = tk.Tk()
+    window.title('派對孔明(つ´ω`)つ')
+    window .geometry(f'300x200') # width x height
     window.eval('tk::PlaceWindow . center')
     window.resizable(False, False)
-    window.title('派對孔明(つ´ω`)つ')
     window.protocol("WM_DELETE_WINDOW", lambda : os._exit(status=0))
 
-    closebutton = create_button("關閉", 1, 2)
-    closebutton.bind('<Button-1>', stopThread) # 綁定滑鼠click事件, Button-1 → 左鍵
+    # closebutton = create_button("關閉", 1, 2)
+    # closebutton.bind('<Button-1>', stopThread) # 綁定滑鼠click事件, Button-1 → 左鍵
 
     btnExec = create_button('執行')
     btnExec.focus_force()
