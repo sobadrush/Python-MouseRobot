@@ -21,7 +21,7 @@ def create_button(txt='default'):
     btn = tk.Button(window, text=txt, bg='gray', fg='white', font=('Arial', 13))
     btn['width'] = 50
     btn['height'] = 5
-
+    btn['font'] = tkFont.Font(family='Arial', size=20, weight='bold')
 
     # 按鈕被按下的背景顏色
     btn['activebackground'] = 'darkgray'
@@ -46,6 +46,9 @@ def doClickEvent(event):
     print(_text)
     btnExec.configure(bg="lightBlue", fg="red", text=_text)
 
+"""
+停止Thread
+"""
 def stopThread(event):
     print("======= stopThread ======")
     th1.pause()
