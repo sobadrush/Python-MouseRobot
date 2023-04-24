@@ -1,6 +1,6 @@
 # -*- coding: UTF-8 -*-
 
-from math import cos, pi, sin, radians
+from math import cos, pi, sin, radians, ceil, floor
 import pyautogui
 import time
 
@@ -50,7 +50,9 @@ def moveMouseHeart():
                 i = 0
             pos_X = pointsTuple[i].get("X") + centralX
             pos_Y = pointsTuple[i].get("Y") + centralY
-            print(f'{{ {pos_X}, {pos_Y} }}')
+            postionStr = f'{{ {round(pos_X, 2)}, {round(pos_Y, 2)} }}'
+            gl.set_value('POS_XY', postionStr)
+            print(postionStr)
             pyautogui.moveTo(x=pos_X, y=pos_Y, duration=0.01) # 移動滑鼠
             i += 1
 
